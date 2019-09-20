@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'start';
+  title = 'Romain';
+  rootName = 'Angela';
+  rootItems = ['Apples', 'Bananas', 'Cherries'];
+
+  onNameChanged(newName) {
+    this.rootName = newName;
+  }
+
+  onItemWasAdded(newItem) {
+    this.rootItems.push(newItem);
+  }
 }

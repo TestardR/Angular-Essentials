@@ -1,1 +1,5 @@
 <h1>Hello {{ title }}</h1>
+<!-- <app-user [name]="'Marta'"></app-user> -->
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+<br />
+<app-cart [items]="rootItems" (itemAdded)="onItemWasAdded($event)"></app-cart>
